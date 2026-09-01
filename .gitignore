@@ -5,3 +5,14 @@ site_verify/
 __pycache__/
 *.pyc
 mkdocs-server*.log
+.DS_Store
+
+# Local moderation state. Raw submissions and credentials must never be committed.
+.moderation/
+moderation-data/
+docs/local-preview/
+*.sqlite3
+*.db
+.env
+.env.*
+!.env.example

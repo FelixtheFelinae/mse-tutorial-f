@@ -1,0 +1,26 @@
+{
+  "site_contact_emails": [
+    "2296937031@qq.com"
+  ],
+  "trusted_contact_paths": [
+    "docs/index.md",
+    "docs/about.md",
+    "docs/contribute.md",
+    "docs/policies/corrections.md"
+  ],
+  "template_prefixes": [
+    "docs/page-templates/"
+  ],
+  "metadata_exempt_paths": [
+    "docs/index.md",
+    "docs/about.md",
+    "docs/contribute.md",
+    "docs/更新记录.md",
+    "docs/policies/content-policy.md",
+    "docs/policies/privacy-ai.md",
+    "docs/policies/corrections.md"
+  ],
+  "metadata_exempt_prefixes": [
+    "docs/page-templates/"
+  ]
+}

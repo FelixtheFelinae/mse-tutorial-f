@@ -1,11 +1,19 @@
 ---
 hide:
   - toc
+publication:
+  status: draft
+  author_display: anonymous
+  author_consent_confirmed: false
+  ai_editing_consent: false
+  public_contact_consent: false
+  third_party_data_checked: false
+  media_rights_confirmed: false
 ---
 
 # [待填写：标题]
 
-> 本文发布前请确认：作者同意公开；隐私信息已检查；联系方式已获授权。
+> 本文发布前请确认：作者同意公开；匿名方式已确认；隐私信息已检查；联系方式和媒体材料已获授权。
 
 ## 基本信息
 
@@ -51,3 +59,5 @@ A：[待填写：回答]
 ## 备注
 
 [待填写：特殊情况、更新说明、勘误记录。]
+
+> 编辑不得擅自改变作者经历中的姓名、数字、日期、学校、项目、排名、结果、否定关系和事实主张。

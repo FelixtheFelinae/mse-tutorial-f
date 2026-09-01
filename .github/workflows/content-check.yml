@@ -1,0 +1,35 @@
+name: Content checks
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install site dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run unit tests
+        run: python -m unittest discover -s automation/tests -v
+
+      - name: Check changed content
+        if: github.event_name == 'pull_request'
+        run: python -m automation.moderation_agent check-diff --base "${{ github.event.pull_request.base.sha }}"
+
+      - name: Build site strictly
+        run: mkdocs build --strict
